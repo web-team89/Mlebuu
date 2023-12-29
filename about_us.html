@@ -28,18 +28,18 @@
                     <a href="about_us.html">About Us</a>
 
                     <!-- Dropdown Menu -->
-                    <div class="dropdown" >
-                            <label for="toggleNav"><span class="navTitle">Meeting</span></label>               
-                            <input type="checkbox" id="toggleNav"> 
-                            <ul class="navList">
-                                <li class="navItem"><a class="navLink" href="call.html">Call</a></li> 
-                                <li class="navItem"><a class="navLink" href="download.html">Download</a></li> 
-                                <li class="navItem"><a class="navLink" href="about_us.html">About Us</a></li> 
-                                <li class="navItem"><a class="navLink" href="contect_us.html">Contact Us</a></li>
-                                <li class="navItem"><a class="navLink" href="evevt-workshops.html">Events</a></li>
-                                <li class="navItem"><a class="navLink" href="Partners.html">Partners</a></li>
-                                <li class="navItem"><a class="navLink" href="artcle.html">Article</a></li>
-                            </ul>
+                    <div class="dropdown">
+                        <label for="toggleNav"><span class="navTitle">Meeting</span></label>
+                        <input type="checkbox" id="toggleNav">
+                        <ul class="navList">
+                            <li class="navItem"><a class="navLink" href="call.html">Call</a></li>
+                            <li class="navItem"><a class="navLink" href="download.html">Download</a></li>
+                            <li class="navItem"><a class="navLink" href="about_us.html">About Us</a></li>
+                            <li class="navItem"><a class="navLink" href="contect_us.html">Contact Us</a></li>
+                            <li class="navItem"><a class="navLink" href="evevt-workshops.html">Events</a></li>
+                            <li class="navItem"><a class="navLink" href="Partners.html">Partners</a></li>
+                            <li class="navItem"><a class="navLink" href="artcle.html">Article</a></li>
+                        </ul>
                     </div>
                     <a href="sign_up.html" class="register-nav">Daftar</a>
                     <a href="sign_in.html" class="login-nav">Masuk</a>
@@ -49,7 +49,7 @@
     </header>
 
     <!-- Sidebar -->
-    <div class="sidebar" id="sidebar"  onmouseleave="toggleSidebar()">
+    <div class="sidebar" id="sidebar" onmouseleave="toggleSidebar()">
         <div class="sidebar-links">
             <a href="index.html">Home</a>
             <a href="call.html">Call</a>
@@ -94,10 +94,11 @@
                 <div class="team-card-wrapper" id="teamCardWrapper">
                     <!-- Your team cards will be dynamically added here using JavaScript -->
                 </div>
-            
+
                 <button class="team-swiper-button-next team-swiper-navBtn" onclick="nextTeamCard()">&#9654;</button>
                 <button class="team-swiper-button-prev team-swiper-navBtn" onclick="prevTeamCard()">&#9664;</button>
-            </div>        </div>
+            </div>
+        </div>
     </div>
 
 
@@ -106,14 +107,13 @@
 
     <!-- Footer Section -->
     <footer>
-        <div class="footer-content" >
+        <div class="footer-content">
             <!-- About Footer Column -->
             <div class="footer-column about-footer">
                 <h3>Powered By</h3>
                 <div>Mlebuu <img src="images/icons/video-camera(2).png" alt=""></div>
                 <p>
-                    Creative Agency
-                    Kudus, East Java, Indonesia
+                    Creative Agency Kudus, East Java, Indonesia
                 </p>
             </div>
 
@@ -152,40 +152,138 @@
             </div>
         </div>
     </footer>
-<script>
-            const teamCardWrapper = document.getElementById('teamCardWrapper');
-        const teamCardsData = [
-            { image: 'images/team/ziad.jpg', name: 'Ziad Hassan', id: '2220180', title: 'IT deportment' , description: 'G-1 section 2 lab 3', facebook: 'https://www.facebook.com/ziad.hassan.148116?mibextid=ZbWKwL' , instagram : 'https://www.instagram.com/3_p0ox?igsh=MzNlNGNkZWQ4Mg==' , gmail: 'zeyad.h.abaza@gmail.com' , twitter : 'https://x.com/3p0ox?s=09', },
-            { image: 'images/Client/comments-1.jpg', name: 'Team Member 3', id: '2220444', title: 'IT deportment' , description: '', facebook: '' , instagram : '' , gmail: '' , twitter : '', },
-            { image: 'images/Client/comments-1.jpg', name: 'Team Member 3', id: '2220444', title: 'IT deportment' , description: '', facebook: '' , instagram : '' , gmail: '' , twitter : '', },
-            { image: 'images/Client/comments-1.jpg', name: 'Team Member 3', id: '2220444', title: 'IT deportment' , description: '', facebook: '' , instagram : '' , gmail: '' , twitter : '', },
-            { image: 'images/Client/comments-1.jpg', name: 'Team Member 3', id: '2220444', title: 'IT deportment' , description: '', facebook: '' , instagram : '' , gmail: '' , twitter : '', },
-            { image: 'images/team/RawanRabei.jpg', name: 'Rewan Rabei Al-Saeed', id: '2220169', title: 'IT deportment' , description: 'G-1 section 2 lab 3', facebook: 'https://www.facebook.com/profile.php?id=100047731432396' , instagram : 'https://www.instagram.com/ronarabey?igsh=MWRkazNqMmp1OWRmdw==' , gmail: 'rewanrabey753@gmail.com' , twitter : '', },
-            { image: 'images/Client/comments-1.jpg', name: 'Madeha Alaa eldin', id: '2220448', title: 'IT deportment' , description: 'G-2 section 2 lab 3', facebook: '' , instagram : '' , gmail: '' , twitter : '', },
-            { image: 'images/Client/comments-1.jpg', name: 'Rewan', id: '2220444', title: 'IT deportment' , description: 'G-1 section 2 lab 3', facebook: '' , instagram : '' , gmail: '' , twitter : '', },
-            { image: 'images/Client/comments-1.jpg', name: 'Mohammed Shaban', id: '2220444', title: 'IT deportment' , description: '', facebook: '' , instagram : '' , gmail: '' , twitter : '', },
-            { image: 'images/Client/comments-1.jpg', name: 'Mohamed Hassan', id: '2220067', title: 'IT deportment' , description: 'G-2 section 2 lab 1', facebook: '' , instagram : '' , gmail: '' , twitter : '', },
-            { image: 'images/Client/comments-3.jpg', name: 'Omar mohammed', id: '2220315', title: 'IT deportment' , description: 'G-1 section 2 lab 3', facebook: '' , instagram : '' , gmail: '' , twitter : '', },
-        ];
-    
+    <script>
+        const teamCardWrapper = document.getElementById('teamCardWrapper');
+        const teamCardsData = [{
+            image: 'images/team/ziad.jpg',
+            name: 'Ziad Hassan',
+            id: '2220180',
+            title: 'IT deportment',
+            description: 'G-1 section 2 lab 3',
+            facebook: 'https://www.facebook.com/ziad.hassan.148116?mibextid=ZbWKwL',
+            instagram: 'https://www.instagram.com/3_p0ox?igsh=MzNlNGNkZWQ4Mg==',
+            gmail: 'zeyad.h.abaza@gmail.com',
+            twitter: 'https://x.com/3p0ox?s=09',
+        }, {
+            image: 'images/team/rawan.jpg',
+            name: 'Rawan Magdy',
+            id: '2220170',
+            title: 'IT deportment',
+            description: 'G-1 section 2 lab 3',
+            facebook: 'https://www.facebook.com/rewan.Magdy.As3',
+            instagram: 'https://www.instagram.com/rawanmagdy906/',
+            gmail: 'rawanmagdy906@gmail.com',
+            twitter: '',
+        }, {
+            image: 'images/team/hazem.jpg',
+            name: 'Hazem Mohamed',
+            id: '2220136',
+            title: 'IT deportment',
+            description: 'G-1 section 2 lab 2',
+            facebook: 'https://www.facebook.com/hazem.hessen.142',
+            instagram: 'https://www.instagram.com/hazem__hessen?igsh=ZGNjOWZkYTE3MQ==',
+            gmail: 'hazemhessen3@gmail.com',
+            twitter: '',
+        }, {
+            image: 'images/Client/comments-1.jpg',
+            name: 'Team Member 3',
+            id: '2220444',
+            title: 'IT deportment',
+            description: '',
+            facebook: '',
+            instagram: '',
+            gmail: '',
+            twitter: '',
+        }, {
+            image: 'images/Client/comments-1.jpg',
+            name: 'Team Member 3',
+            id: '2220444',
+            title: 'IT deportment',
+            description: '',
+            facebook: '',
+            instagram: '',
+            gmail: '',
+            twitter: '',
+        }, {
+            image: 'images/team/RawanRabei.jpg',
+            name: 'Rewan Rabei Al-Saeed',
+            id: '2220169',
+            title: 'IT deportment',
+            description: 'G-1 section 2 lab 3',
+            facebook: 'https://www.facebook.com/profile.php?id=100047731432396',
+            instagram: 'https://www.instagram.com/ronarabey?igsh=MWRkazNqMmp1OWRmdw==',
+            gmail: 'rewanrabey753@gmail.com',
+            twitter: '',
+        }, {
+            image: 'images/Client/comments-1.jpg',
+            name: 'Madeha Alaa eldin',
+            id: '2220448',
+            title: 'IT deportment',
+            description: 'G-2 section 2 lab 3',
+            facebook: '',
+            instagram: '',
+            gmail: '',
+            twitter: '',
+        }, {
+            image: 'images/Client/comments-1.jpg',
+            name: 'Rewan',
+            id: '2220444',
+            title: 'IT deportment',
+            description: 'G-1 section 2 lab 3',
+            facebook: '',
+            instagram: '',
+            gmail: '',
+            twitter: '',
+        }, {
+            image: 'images/Client/comments-1.jpg',
+            name: 'Mohammed Shaban',
+            id: '2220444',
+            title: 'IT deportment',
+            description: '',
+            facebook: '',
+            instagram: '',
+            gmail: '',
+            twitter: '',
+        }, {
+            image: 'images/Client/comments-1.jpg',
+            name: 'Mohamed Hassan',
+            id: '2220067',
+            title: 'IT deportment',
+            description: 'G-2 section 2 lab 1',
+            facebook: '',
+            instagram: '',
+            gmail: '',
+            twitter: '',
+        }, {
+            image: 'images/team/omar.jpg',
+            name: 'Omar Algamel',
+            id: '2220315',
+            title: 'IT deportment',
+            description: 'G-1 section 2 lab 3',
+            facebook: 'https://www.facebook.com/algamel.omer',
+            instagram: 'https://www.instagram.com/algamel.omar/',
+            gmail: 'omeralgamel@gmail.com',
+            twitter: '',
+        }, ];
+
         let currentTeamIndex = 0;
-    
+
         function nextTeamCard() {
             currentTeamIndex = (currentTeamIndex + 1) % teamCardsData.length;
             updateTeamCardWrapper();
         }
-    
+
         function prevTeamCard() {
             currentTeamIndex = (currentTeamIndex - 1 + teamCardsData.length) % teamCardsData.length;
             updateTeamCardWrapper();
         }
-    
+
         function updateTeamCardWrapper() {
             // حذف العناصر القديمة
             while (teamCardWrapper.firstChild) {
                 teamCardWrapper.removeChild(teamCardWrapper.firstChild);
             }
-    
+
             // إنشاء وإضافة الكاردات الجديدة
             for (let i = -1; i <= 1; i++) {
                 const index = (currentTeamIndex + i + teamCardsData.length) % teamCardsData.length;
@@ -193,13 +291,15 @@
                 teamCardWrapper.insertAdjacentHTML('beforeend', teamCardHTML);
             }
         }
-    
+
         // Function to create team card elements using template literals
         function createTeamCard(data) {
             return `
             <div class="card_team">
                 <div class="image_team">
+                    <div class="wrapper">
                     <img src="${data.image}" alt="img person">
+                    </div>
                 </div>
                 <div class="name_member">
                     <h2>
@@ -222,18 +322,19 @@
                         <img src="images/icons/instagram.png" alt="">
                     </a>
                     <a href="${data.twitter}">
-                        <img src="images/icons/twitter.png" alt="">
+                        <img src="images/icons/x-twitter.svg" alt="">
                     </a>
-                    <a href="${data.gmail}">
+                    <a href="mailto:${data.gmail}">
                         <img src="images/icons/gmail.png" alt="">
                     </a>
                 </div>
             </div>
             `;
         }
-    
+
         // Render initial team cards
         updateTeamCardWrapper();
-</script>
+    </script>
 </body>
+
 </html>
