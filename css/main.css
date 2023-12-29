@@ -1585,6 +1585,8 @@ input:focus {
     padding: 20px;
     margin-top: 20px;
     font-size: 11px;
+    height: 350px;
+    justify-content: center;
 }
 
 .card_team h2 {
@@ -1595,12 +1597,22 @@ input:focus {
     background-color: #2896b8;
     padding: 5px;
     border-radius: 15px;
+    justify-content: center;
+    display: flex;
 }
 
 .image_team img {
+    width: 100%;
+}
+
+.image_team .wrapper {
     width: 120px;
+    height: 120px;
+    justify-content: center;
+    overflow: hidden;
     border-radius: 50%;
     box-shadow: 0px 0px 20px -1px #effbff;
+    margin: auto;
 }
 
 .contect_team img {
@@ -1632,7 +1644,8 @@ input:focus {
 
 .siting_number p {
     font-size: 12px;
-    margin-left: 80px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -2299,29 +2312,26 @@ button {
 
 .home .sixth-section {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .home .sixth-section .grid-container {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 
 .home .sixth-section .line {
     grid-column: 2;
-    height: 75%;
-    border-left: 2px solid #2896B8;
+    height: 60%;
+    border-left: 3px solid #2896B8;
     margin: auto;
+    margin-bottom: 10.5rem;
 }
 
 .home .sixth-section .column {
-    padding: 20px;
-    margin: auto;
     width: 95%;
     justify-content: center;
-    align-items: center;
 }
 
 .home .sixth-section .column h2 {
@@ -2366,10 +2376,9 @@ button {
     margin-right: 2.5rem;
 }
 
-
-/* .home .sixth-section .sec-col p {
-  margin-bottom: 3.5rem;
-} */
+.home .sixth-section .sec-col p {
+    margin-bottom: 3.5rem;
+}
 
 
 /* responsive */
@@ -2457,6 +2466,7 @@ button {
         border-left: none;
         border-top: 2px solid #2896B8;
         margin: auto;
+        margin-bottom: 0;
     }
     .home .fifth-section img {
         width: 100%;
